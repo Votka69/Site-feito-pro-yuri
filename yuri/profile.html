@@ -10,60 +10,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    /* Estilo para o corpo da página */
     body {
         margin: 0;
         display: flex;
         flex-direction: column;
-        height: 100vh; /* Define a altura da página como 100% da altura da janela */
+        height: 100vh;
     }
 
-    /* Estilo para a parte superior preta */
     header {
         background-color: black;
         flex: 1;
     }
 
-    /* Estilo para a parte inferior preta */
     footer {
         background-color: black;
         flex: 1;
     }
 
-    /* Estilo para centralizar a tabela */
     #main_table {
-        flex: 1; /* Faz com que a tabela ocupe o restante do espaço disponível */
+        flex: 1; 
         display: flex;
-        justify-content: center; /* Alinha horizontalmente no centro */
-        align-items: center; /* Alinha verticalmente no centro */
+        justify-content: center; 
+        align-items: center;
     }
 
-    /* Estilos para a tabela */
     table {
-        border-collapse: collapse; /* Junta as bordas das células */
-        width: 80%; /* Largura da tabela */
-        border: 2px solid blue; /* Borda da tabela */
+        border-collapse: collapse;
+        width: 80%; 
+        border: 2px solid blue; 
     }
 
     th, td {
-        border: 1px solid blue; /* Borda das células */
-        padding: 8px; /* Espaçamento interno das células */
-        text-align: left; /* Alinhamento do texto */
+        border: 1px solid blue; 
+        padding: 8px; 
+        text-align: left; 
     }
 
     th {
-        background-color: #f2f2f2; /* Cor de fundo das células de cabeçalho */
+        background-color: #f2f2f2;
     }
 </style>
 <style>
-    /* CSS para centralizar a tabela */
     #main_table {
-        margin: 0 auto; /* Define margens automáticas */
-        width: 80%; /* Define a largura da tabela */
+        margin: 0 auto; 
+        width: 80%; 
     }
 </style>
 <body>
-    <button onclick="goBack()">Voltar</button> <!-- Botão de voltar -->
+    <button onclick="goBack()">Voltar</button>
     <div id="main_table">
         <table>
             <tr>
@@ -338,7 +332,7 @@
 
     <script>
         function goBack() {
-            window.history.back(); // Função para voltar à página anterior
+            window.history.back(); 
         }
     </script>
 </body>
