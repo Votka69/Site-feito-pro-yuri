@@ -13,7 +13,6 @@
             width: 50%;
             margin: 50px auto;
         }
-        /* Estilo para o botão */
         #submit-button {
             background-color: blue;
             color: white;
@@ -21,7 +20,6 @@
             border: none;
             cursor: pointer;
         }
-        /* Estilo para a tabela de perfil */
         #profile-table {
             width: 80%;
             margin: 30px auto;
@@ -64,19 +62,16 @@
             </tr>
         </thead>
         <tbody id="profile-body">
-            <!-- Linhas da tabela de perfil -->
         </tbody>
     </table>
 
     <script>
         function addProfile() {
-            // Obtendo os valores do formulário
             var name = document.getElementById("name").value;
             var age = document.getElementById("age").value;
             var email = document.getElementById("email").value;
             var city = document.getElementById("city").value;
 
-            // Criando uma nova linha na tabela de perfil
             var table = document.getElementById("profile-body");
             var newRow = table.insertRow(table.rows.length);
             var cell1 = newRow.insertCell(0);
@@ -88,7 +83,6 @@
             cell3.innerHTML = email;
             cell4.innerHTML = city;
 
-            // Limpar o formulário após adicionar o perfil
             document.getElementById("profile-form").reset();
         }
 
