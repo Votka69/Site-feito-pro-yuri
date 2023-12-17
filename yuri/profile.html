@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROTOTIPO</title>
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://kit.fontawesome.com/aa21806e5b.js" crossorigin="anonymous"></script>
+    <script src="table.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Estilo para o corpo da página */
+    body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh; /* Define a altura da página como 100% da altura da janela */
+    }
+
+    /* Estilo para a parte superior preta */
+    header {
+        background-color: black;
+        flex: 1;
+    }
+
+    /* Estilo para a parte inferior preta */
+    footer {
+        background-color: black;
+        flex: 1;
+    }
+
+    /* Estilo para centralizar a tabela */
+    #main_table {
+        flex: 1; /* Faz com que a tabela ocupe o restante do espaço disponível */
+        display: flex;
+        justify-content: center; /* Alinha horizontalmente no centro */
+        align-items: center; /* Alinha verticalmente no centro */
+    }
+
+    /* Estilos para a tabela */
+    table {
+        border-collapse: collapse; /* Junta as bordas das células */
+        width: 80%; /* Largura da tabela */
+        border: 2px solid blue; /* Borda da tabela */
+    }
+
+    th, td {
+        border: 1px solid blue; /* Borda das células */
+        padding: 8px; /* Espaçamento interno das células */
+        text-align: left; /* Alinhamento do texto */
+    }
+
+    th {
+        background-color: #f2f2f2; /* Cor de fundo das células de cabeçalho */
+    }
+</style>
+<style>
+    /* CSS para centralizar a tabela */
+    #main_table {
+        margin: 0 auto; /* Define margens automáticas */
+        width: 80%; /* Define a largura da tabela */
+    }
+</style>
+<body>
+    <button onclick="goBack()">Voltar</button> <!-- Botão de voltar -->
+    <div id="main_table">
+        <table>
+            <tr>
+                <td>
+                    <div class="table_options">
+                        <div class="profile" onclick="profile_click()">
+                            <i class="fa-regular fa-user user"></i>
+                        </div>
+                        <div class="option_text">
+                            <p class="name" onclick="profile_click()">Nome,20</p>
+                            <p class="distance" onclick="distance_click()">Distancia</p>
+                        </div>
+                        <div class="options_bar">
+                            <i class="fa-regular fa-heart bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-face-smile bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-thumbs-down bar" onclick="iconClicked(this)"></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="table_options">
+                        <div class="profile" onclick="profile_click()">
+                            <i class="fa-regular fa-user user"></i>
+                        </div>
+                        <div class="option_text">
+                            <p class="name" onclick="profile_click()">Nome,20</p>
+                            <p class="distance" onclick="distance_click()">Distancia</p>
+                        </div>
+                        <div class="options_bar">
+                            <i class="fa-regular fa-heart bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-face-smile bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-thumbs-down bar" onclick="iconClicked(this)"></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="table_options">
+                        <div class="profile" onclick="profile_click()">
+                            <i class="fa-regular fa-user user"></i>
+                        </div>
+                        <div class="option_text">
+                            <p class="name" onclick="profile_click()">Nome,20</p>
+                            <p class="distance" onclick="distance_click()">Distancia</p>
+                        </div>
+                        <div class="options_bar">
+                            <i class="fa-regular fa-heart bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-face-smile bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-thumbs-down bar" onclick="iconClicked(this)"></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="table_options">
+                        <div class="profile" onclick="profile_click()">
+                            <i class="fa-regular fa-user user"></i>
+                        </div>
+                        <div class="option_text">
+                            <p class="name" onclick="profile_click()">Nome,20</p>
+                            <p class="distance" onclick="distance_click()">Distancia</p>
+                        </div>
+                        <div class="options_bar">
+                            <i class="fa-regular fa-heart bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-face-smile bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-thumbs-down bar" onclick="iconClicked(this)"></i>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="table_options">
+                        <div class="profile" onclick="profile_click()">
+                            <i class="fa-regular fa-user user"></i>
+                        </div>
+                        <div class="option_text">
+                            <p class="name" onclick="profile_click()">Nome,20</p>
+                            <p class="distance" onclick="distance_click()">Distancia</p>
+                        </div>
+                        <div class="options_bar">
+                            <i class="fa-regular fa-heart bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-face-smile bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-thumbs-down bar" onclick="iconClicked(this)"></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="table_options">
+                        <div class="profile" onclick="profile_click()">
+                            <i class="fa-regular fa-user user"></i>
+                        </div>
+                        <div class="option_text">
+                            <p class="name" onclick="profile_click()">Nome,20</p>
+                            <p class="distance" onclick="distance_click()">Distancia</p>
+                        </div>
+                        <div class="options_bar">
+                            <i class="fa-regular fa-heart bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-face-smile bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-thumbs-down bar" onclick="iconClicked(this)"></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="table_options">
+                        <div class="profile" onclick="profile_click()">
+                            <i class="fa-regular fa-user user"></i>
+                        </div>
+                        <div class="option_text">
+                            <p class="name" onclick="profile_click()">Nome,20</p>
+                            <p class="distance" onclick="distance_click()">Distancia</p>
+                        </div>
+                        <div class="options_bar">
+                            <i class="fa-regular fa-heart bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-face-smile bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-thumbs-down bar" onclick="iconClicked(this)"></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="table_options">
+                        <div class="profile" onclick="profile_click()">
+                            <i class="fa-regular fa-user user"></i>
+                        </div>
+                        <div class="option_text">
+                            <p class="name" onclick="profile_click()">Nome,20</p>
+                            <p class="distance" onclick="distance_click()">Distancia</p>
+                        </div>
+                        <div class="options_bar">
+                            <i class="fa-regular fa-heart bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-face-smile bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-thumbs-down bar" onclick="iconClicked(this)"></i>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="table_options">
+                        <div class="profile" onclick="profile_click()">
+                            <i class="fa-regular fa-user user"></i>
+                        </div>
+                        <div class="option_text">
+                            <p class="name" onclick="profile_click()">Nome,20</p>
+                            <p class="distance" onclick="distance_click()">Distancia</p>
+                        </div>
+                        <div class="options_bar">
+                            <i class="fa-regular fa-heart bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-face-smile bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-thumbs-down bar" onclick="iconClicked(this)"></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="table_options">
+                        <div class="profile" onclick="profile_click()">
+                            <i class="fa-regular fa-user user"></i>
+                        </div>
+                        <div class="option_text">
+                            <p class="name" onclick="profile_click()">Nome,20</p>
+                            <p class="distance" onclick="distance_click()">Distancia</p>
+                        </div>
+                        <div class="options_bar">
+                            <i class="fa-regular fa-heart bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-face-smile bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-thumbs-down bar" onclick="iconClicked(this)"></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="table_options">
+                        <div class="profile" onclick="profile_click()">
+                            <i class="fa-regular fa-user user"></i>
+                        </div>
+                        <div class="option_text">
+                            <p class="name" onclick="profile_click()">Nome,20</p>
+                            <p class="distance" onclick="distance_click()">Distancia</p>
+                        </div>
+                        <div class="options_bar">
+                            <i class="fa-regular fa-heart bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-face-smile bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-thumbs-down bar" onclick="iconClicked(this)"></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="table_options">
+                        <div class="profile" onclick="profile_click()">
+                            <i class="fa-regular fa-user user"></i>
+                        </div>
+                        <div class="option_text">
+                            <p class="name" onclick="profile_click()">Nome,20</p>
+                            <p class="distance" onclick="distance_click()">Distancia</p>
+                        </div>
+                        <div class="options_bar">
+                            <i class="fa-regular fa-heart bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-face-smile bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-thumbs-down bar" onclick="iconClicked(this)"></i>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="table_options">
+                        <div class="profile" onclick="profile_click()">
+                            <i class="fa-regular fa-user user"></i>
+                        </div>
+                        <div class="option_text">
+                            <p class="name" onclick="profile_click()">Nome,20</p>
+                            <p class="distance" onclick="distance_click()">Distancia</p>
+                        </div>
+                        <div class="options_bar">
+                            <i class="fa-regular fa-heart bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-face-smile bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-thumbs-down bar" onclick="iconClicked(this)"></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="table_options">
+                        <div class="profile" onclick="profile_click()">
+                            <i class="fa-regular fa-user user"></i>
+                        </div>
+                        <div class="option_text">
+                            <p class="name" onclick="profile_click()">Nome,20</p>
+                            <p class="distance" onclick="distance_click()">Distancia</p>
+                        </div>
+                        <div class="options_bar">
+                            <i class="fa-regular fa-heart bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-face-smile bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-thumbs-down bar" onclick="iconClicked(this)"></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="table_options">
+                        <div class="profile" onclick="profile_click()">
+                            <i class="fa-regular fa-user user"></i>
+                        </div>
+                        <div class="option_text">
+                            <p class="name" onclick="profile_click()">Nome,20</p>
+                            <p class="distance" onclick="distance_click()">Distancia</p>
+                        </div>
+                        <div class="options_bar">
+                            <i class="fa-regular fa-heart bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-face-smile bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-thumbs-down bar" onclick="iconClicked(this)"></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="table_options">
+                        <div class="profile" onclick="profile_click()">
+                            <i class="fa-regular fa-user user"></i>
+                        </div>
+                        <div class="option_text">
+                            <p class="name" onclick="profile_click()">Nome,20</p>
+                            <p class="distance" onclick="distance_click()">Distancia</p>
+                        </div>
+                        <div class="options_bar">
+                            <i class="fa-regular fa-heart bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-face-smile bar" onclick="iconClicked(this)"></i>
+                            <i class="fa-regular fa-thumbs-down bar" onclick="iconClicked(this)"></i>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back(); // Função para voltar à página anterior
+        }
+    </script>
+</body>
+</html>
